@@ -1,0 +1,57 @@
+.main{
+  background-color: black;
+  overflow: hidden;
+}
+.headRibbon{
+  width: 100% !important;
+  background-color: black;
+}
+.container{
+  margin: 0px 104.5px;
+}
+.playArea{
+  text-align: center;
+}
+
+.board{
+  background-color: rgb(27, 112, 161);
+}
+  *{
+    font-family: 'Roboto', sans-serif;
+    /* background-color: black; */
+  }
+  input{
+    width:40px;border-radius:3px
+  }
+  button{
+    padding:5px;
+    border-radius:5px
+  }
+
+  table{
+    border: 3px dotted rgba(79,191,77,0.69);
+    border-radius: 0px 0px 0px 3px;
+  } 
+  td{
+    cursor:pointer;
+    font-size:23px;
+  }
+  td.fighter {
+    border-radius:25px;
+    padding: 7px;
+    /* border:2px dotted red */
+  }
+  td.zombie{
+    padding: 7px;
+  }
+  
+  .rules{
+    color: beige;
+  }
+  .message{
+    color: greenyellow !important;
+  }
+  .message2{
+    color: yellow !important;
+  }
+  

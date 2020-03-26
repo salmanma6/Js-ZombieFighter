@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+  </style>
+    <div class=headRibbon>
+      <img src="/1.png">
+    </div>
+</head>
+
+<body class="text-center main">
+    <div class="container card text-white bg-dark ">
+      <div class="input-group dimentions pt-4 ">
+        <div class="space col-md-3"></div>
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="">Rows: </span>
+        </div>
+        <input type="number" class="form-control col-md-1 rows" value="10">
+
+        <div class="input-group-prepend ml-4">
+          <span class="input-group-text" id="">Columns: </span>
+        </div>
+        <input type="number" class="form-control col-md-1 columns" value="10">
+
+        <button type="button" class="btn btn-secondary col-md-2 ml-4" onclick="generatePlayground()">Generate
+          playground</button>
+      </div>
+
+
+      <!--   
+  <span><lable class="font-weight-bold">Rows: </label></span><input type="number" class="form-control rows" value="10" >
+    <span><lable class="font-weight-bold">Columns: </label></span><input type="number" class="form-control columns" value="10"> 
+    <button type="button" class="btn btn-light" onclick="generatePlayground()">Generate playground</button> -->
+
+      <div class="playArea mt-5 d-flex justify-content-center">
+        <tr>
+          <table style="margin-top:10px" id="playground" class="text-center board">
+          </table>
+        <tr>
+      </div>
+
+      <div class="controls_1 mt-4">
+        <button type="button" class="btn btn-secondary" onclick="placeMinFighters()">
+          Send 5 heroes
+        </button>
+        <tr>
+          <button type="button" class="btn btn-secondary" onclick="placeMaxFighters()">
+            Send 10 heroes
+          </button>
+        <tr>
+          <button type="button" class="btn btn-secondary" onclick="attack()">
+            Attack
+          </button>
+        <tr>
+          <button type="button" class="btn btn-secondary" onclick="attackAuto()">
+            Attack Auto
+          </button>
+        <tr>
+      </div>
+
+      <div class="controls_2 mt-4">
+        <button type="button" class="btn btn-secondary" onclick="stopAuto()">
+          Stop Auto Attack
+        </button>
+        <tr>
+          <button type="button" class="btn btn-secondary" onclick="removePlayers()">
+            Take out your heros
+          </button>
+      </div>
+
+
+      <div class="rules mt-4">
+        <h2 class="message"></h2>
+        <p class="message2"></p>
+
+        <h4>Here are the rules they live and die by:</h4>
+        <li>If a fighter has less than two living fighters neighbours, it perishes</li>
+        <li>If a fighter has two or three living fighters neighbours ,it continues to live</li>
+        <li>If a fighter has more than three living fighters neighbours, it perishes</li>
+        <li>If a Zombie has exactly three living fighters neighbours, it becomes fighter</li>
+        <li>When a cell touches the corner or side of another cell they are neighbors</li><br>
+        <script type="text/javascript" src="index.js"></script>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
