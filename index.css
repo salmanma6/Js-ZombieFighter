@@ -29,8 +29,7 @@
   }
 
   table{
-    border: 3px dotted rgba(79,191,77,0.69);
-    border-radius: 0px 0px 0px 3px;
+    border-radius: 10px;
   } 
   td{
     cursor:pointer;
