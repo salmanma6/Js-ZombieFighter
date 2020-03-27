@@ -95,7 +95,6 @@ function attack() {
 
 function getFriendly(row, col, end) {
     console.log("getting friends");
-    playground[row][col].style.opacity="0.2";
     let friends = 0;
     if (!(row - 1 < 0)) {
         if (playground[row - 1][col].className == "fighter") {
@@ -218,7 +217,6 @@ function getFriendly(row, col, end) {
             }
         }
     }
-    playground[row][col].style.opacity="1";
     return friends;
 }
 
