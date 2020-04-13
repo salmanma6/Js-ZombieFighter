@@ -1,6 +1,6 @@
 # Js-ZombieFighter
 This is a game which has fighters and zombies fighting in matrix playground 
-
+Live:https://salmanma6.github.io/Js-ZombieFighter/ 
 Here are the rules they live and die by:
 If a fighter has less than two living fighters neighbours, it perishes
 If a fighter has two or three living fighters neighbours ,it continues to live
